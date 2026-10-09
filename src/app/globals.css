@@ -1,0 +1,150 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #0a0a0a;
+  color: #e5e5e5;
+  font-family: ui-sans-serif, system-ui, sans-serif;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+/* ==========================================================================
+   HIGH-CONTRAST LIGHT MODE
+   ========================================================================== */
+
+html.light {
+  color-scheme: light;
+}
+
+html.light body {
+  background: #ffffff !important;
+  color: #09090b !important;
+}
+
+/* Page wrapper & backgrounds */
+html.light .min-h-screen,
+html.light .bg-neutral-950 {
+  background-color: #ffffff !important;
+  color: #09090b !important;
+}
+
+html.light .bg-gradient-to-b {
+  background-image: none !important;
+  background-color: #ffffff !important;
+}
+
+/* Ambient glow subtle adjustment in light mode */
+html.light .bg-emerald-500\/10.blur-3xl {
+  opacity: 0.15 !important;
+}
+
+/* Card surfaces */
+html.light .bg-neutral-900\/30,
+html.light .bg-neutral-900\/40,
+html.light .bg-neutral-900\/50,
+html.light .bg-neutral-900\/60,
+html.light .bg-neutral-900\/80,
+html.light .bg-neutral-900\/90,
+html.light .bg-neutral-900 {
+  background-color: #f8fafc !important;
+  color: #09090b !important;
+}
+
+html.light .bg-neutral-950\/40,
+html.light .bg-neutral-950\/60,
+html.light .bg-neutral-950\/70,
+html.light .bg-neutral-950\/80,
+html.light .bg-neutral-950\/85 {
+  background-color: #ffffff !important;
+  color: #09090b !important;
+}
+
+html.light .bg-neutral-800,
+html.light .bg-neutral-800\/80 {
+  background-color: #f1f5f9 !important;
+  color: #0f172a !important;
+}
+
+/* High contrast borders */
+html.light .border-neutral-800,
+html.light .border-neutral-800\/80,
+html.light .border-neutral-800\/60,
+html.light .border-neutral-700,
+html.light .border-neutral-700\/80,
+html.light .border-neutral-700\/60 {
+  border-color: #cbd5e1 !important;
+}
+
+/* High contrast typography */
+html.light .text-white {
+  color: #000000 !important;
+}
+
+html.light .text-neutral-200,
+html.light .text-neutral-300 {
+  color: #0f172a !important;
+}
+
+html.light .text-neutral-400 {
+  color: #334155 !important;
+}
+
+html.light .text-neutral-500 {
+  color: #475569 !important;
+}
+
+html.light .text-neutral-600 {
+  color: #64748b !important;
+}
+
+/* Accent colors in high-contrast light mode */
+html.light .text-emerald-400,
+html.light .text-emerald-300 {
+  color: #047857 !important;
+}
+
+html.light .bg-emerald-950\/40,
+html.light .bg-emerald-950\/20,
+html.light .bg-emerald-950\/60,
+html.light .bg-emerald-500\/10 {
+  background-color: #ecfdf5 !important;
+}
+
+html.light .border-emerald-500\/30,
+html.light .border-emerald-500\/20,
+html.light .border-emerald-500\/40 {
+  border-color: #059669 !important;
+}
+
+/* Header & Navigation */
+html.light header {
+  background-color: rgba(255, 255, 255, 0.94) !important;
+  border-bottom-color: #cbd5e1 !important;
+}
+
+/* Footer */
+html.light footer {
+  background-color: #f8fafc !important;
+  border-top-color: #cbd5e1 !important;
+}
+
+/* Form inputs */
+html.light input,
+html.light textarea {
+  background-color: #ffffff !important;
+  color: #020617 !important;
+  border-color: #94a3b8 !important;
+}
+
+html.light input::placeholder,
+html.light textarea::placeholder {
+  color: #64748b !important;
+}
+
+/* Modal and overlay */
+html.light .fixed.inset-0.bg-neutral-950\/80 {
+  background-color: rgba(15, 23, 42, 0.6) !important;
+}
